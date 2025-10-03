@@ -5,7 +5,9 @@
 | Room | Dificultad | Conocimienos obtenidos | Acceso Directo (Writeup) |
 | :--- | :--- | :--- | :--- |
 | **Careers in Cyber** | Fácil | Conocedr distintos roles profesionales. | [Ver Solución Aquí](TryHackMe/Careers_in_Cyber.md) |
-| **Blue** | Fácil | Escaneo de vulnerabilidades, explotación de EternalBlue. | [Ver Solución Aquí](TryHackMe/Blue.md) |
+| **Security Principles** | Fácil | Conocedr distintos roles profesionales. | [Ver Solución Aquí](TryHackMe/Security_Principles.md) |
+| **Gobernance & Regulation** | Fácil | Conocedr distintos roles profesionales. | [Ver Solución Aquí](TryHackMe/Gobernance_&_Regulation.md) |
+| **Cyber Kill Chain** | Fácil | Conocedr distintos roles profesionales. | [Ver Solución Aquí](TryHackMe/Cyber_Kill_Chain.md) |
 ---
 
 ## 💀 Hack The Box
