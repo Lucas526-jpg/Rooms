@@ -1,4 +1,4 @@
-# 📚 Writeups y Reportes Formales 📚
+# 📚 Rooms 📚
 
 ## 💀 TryHackMe
 
