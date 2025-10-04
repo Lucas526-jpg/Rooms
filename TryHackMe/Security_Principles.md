@@ -97,36 +97,55 @@ Modelo de Harrison-Ruzzo-Ullman.
 Haga clic en «Ver sitio» y responda a las cuatro preguntas. ¿Cuál es la bandera que ha obtenido al final?  
 Respuesta: THM{SECURITY_MODELS}
 
-## Examinador forense digital
+## Defensa en profundidad
+Se refiere a la defensa multinivel de añadir multiples capas de seguridad, por ejemplo:
 
-Los detectives de la ciberseguridad, se centran en recopilar y analizar pruebas para ayudar a resolver delitos: acusar a los culpables y exonerar a los inocentes, o tambien, utilizan sus habilidades forenses para analizar incidentes, como infracciones de políticas.  
-Responsabilidades:  
-1. Recopilar pruebas digitales respetando los procedimientos legales.
-2. Analizar las pruebas digitales para encontrar respuestas relacionadas con el caso.
-3. Documentar hallazgos e informar sobre el caso.
+Usted tiene un cajón con llave donde guarda sus documentos importantes y sus objetos de valor. La habitación correspondiente estuviera cerrada con llave, que la puerta principal del apartamento estuviera cerrada con llave, que la puerta del edificio estuviera cerrada con llave e incluso quizá querríamos instalar algunas cámaras de seguridad por el camino. Aunque estos múltiples niveles de seguridad no pueden detener a todos los ladrones, bloquearían a la mayoría y ralentizarían a los demás.
 
-## Analista de malware
+## ISO/EAC 12249
 
-Consiste en analizar programas sospechosos, descubrir qué hacen y redactar informes sobre sus hallazgos. A veces se denomina al analista de malware «ingeniero inverso», se deben tener solidos conocimientos en lenguajes de bajo nivel como c y ensamblador.  
-Responsabilidaes:  
-1. Realizar análisis estáticos de programas maliciosos, lo que implica ingeniería inversa.
-2. Realizar análisis dinámicos de muestras de malware observando sus actividades en un entorno controlado.
-3. Documentar y notificar todos los hallazgos.
+La Organización Internacional de Normalización (ISO) y la Comisión Electrotécnica Internacional (IEC) han creado la norma ISO/IEC 19249.
+Que enumera cinco principios arquitectónicos:
 
-## Pentester
+Separación de dominios: cada conjunto de componentes relacionados se agrupa como una única entidad.  
+Capas: cuando un sistema se estructura en muchos niveles o capas abstractas, es posible imponer políticas de seguridad en diferentes niveles; además, sería factible validar el funcionamiento.  
+Encapsulación: en la programación orientada a objetos (OOP), ocultamos las implementaciones de bajo nivel y evitamos la manipulación directa de los datos de un objeto proporcionando métodos específicos para ese fin.
+Redundancia: este principio garantiza la disponibilidad y la integridad.  
+Virtualización: El concepto de virtualización consiste en compartir un único conjunto de hardware entre varios sistemas operativos.
 
-La función de un pentester es comprobar la seguridad de los sistemas y el software de una empresa, lo que se consigue mediante intentos de descubrir fallos y vulnerabilidades a través de hacking sistematizado.  
-Responsabilidades:  
-1. Realizar pruebas en sistemas informáticos, redes y aplicaciones basadas en la web.
-2. Llevar a cabo evaluaciones de seguridad, auditorías y análisis de políticas.
-3. Evaluar e informar sobre los datos obtenidos, recomendando medidas para la prevención de ataques.
+La norma ISO/IEC 19249 enseña cinco principios de diseño:
 
-## Red Team
-Los miembros del red team se encargan de poner a prueba las capacidades de detección y respuesta de la empresa.  
-Esta función requiere imitar las acciones de los ciberdelincuentes, emular ataques maliciosos, mantener el acceso y evitar ser detectados.  
-Responsabilidades:  
-1. Emular el papel de un agente malicioso para descubrir vulnerabilidades explotables, mantener el acceso y evitar la detección.
-2. Evaluar los controles de seguridad, la inteligencia sobre amenazas y los procedimientos de respuesta a incidentes de las organizaciones.
-3. Evaluar e informar sobre los conocimientos adquiridos, con datos procesables para que las empresas eviten casos reales.
+El principio del privilegio mínimo enseña que se debe proporcionar la menor cantidad de permisos posibles para que alguien realice su tarea y nada más.  
+Minimización de la superficie de ataque: todos los sistemas tienen vulnerabilidades que un atacante podría utilizar para comprometerlos. Algunas vulnerabilidades son conocidas, mientras que otras aún no se han descubierto. Estas vulnerabilidades representan riesgos que debemos intentar minimizar.  
+Validación centralizada de parámetros: Muchas amenazas se deben a que el sistema recibe entradas, especialmente de los usuarios. Las entradas no válidas pueden utilizarse para explotar vulnerabilidades del sistema, como la denegación de servicio y la ejecución remota de código. Por lo tanto, la validación de parámetros es un paso necesario para garantizar el estado correcto del sistema. Teniendo en cuenta el número de parámetros que maneja un sistema, la validación de los mismos debe centralizarse en una biblioteca o sistema.  
+Servicios de seguridad generales centralizados: como principio de seguridad, debemos aspirar a centralizar todos los servicios de seguridad.  
+Preparación para el manejo de errores y excepciones: siempre que construimos un sistema, debemos tener en cuenta que se producen y se producirán errores y excepciones.
 
-## Al finalizar, podremos resolver un quiz que nos indicara que rol en ciberseguridad se adapta mas a nosotros.
+### Preguntas
+
+¿Qué principio está aplicando cuando apaga un servidor inseguro que no es crítico para el negocio?  
+Respuesta: 2.  
+
+Su empresa ha contratado a un nuevo representante de ventas. ¿Qué principio están aplicando cuando le piden que les dé acceso solo a los productos y precios de la empresa?  
+Respuesta: 1.
+
+Mientras leía el código de un cajero automático, observó una gran cantidad de código para manejar situaciones inesperadas, como la desconexión de la red y los cortes de energía. ¿Qué principio están aplicando?
+Respuesta: 5.
+
+## Confianza cero frente a confianza pero verificación
+
+Dos principios de seguridad que nos interesan en relación con la confianza:
+
+onfía, pero verifica: este principio nos enseña que siempre debemos verificar, incluso cuando confiamos en una entidad y en su comportamiento.  
+Confianza cero: este principio trata la confianza como una vulnerabilidad y, en consecuencia, se ocupa de las amenazas relacionadas con el personal interno.
+
+La microsegmentación es una de las implementaciones utilizadas para la confianza cero. Se refiere al diseño en el que un segmento de red puede ser tan pequeño como un solo host. Además, la comunicación entre segmentos requiere autenticación, comprobaciones de la lista de control de acceso y otros requisitos de seguridad.
+Hay un límite en cuanto a la medida en que podemos aplicar la confianza cero sin afectar negativamente a un negocio; sin embargo, esto no significa que no debamos aplicarla siempre que sea factible.
+
+## Amenaza frente a riesgo
+
+Hay tres términos que debemos tener en cuenta para evitar cualquier confusión.
+
+Vulnerabilidad: Vulnerable significa susceptible de sufrir ataques o daños. En seguridad de la información, una vulnerabilidad es una debilidad.  
+Amenaza: Una amenaza es un peligro potencial asociado a esta debilidad o vulnerabilidad.  
+Riesgo: El riesgo se refiere a la probabilidad de que un agente malicioso aproveche una vulnerabilidad y al consiguiente impacto en el negocio.   
