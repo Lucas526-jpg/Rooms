@@ -47,13 +47,55 @@ Proteger la confidencialidad y la integridad al extremo puede restringir la disp
 El atacante logró acceder a los registros de los clientes y los publicó en Internet. ¿Qué tipo de ataque es este?  
 Respuesta: Disclosure
 
-## Respuesta ante incidentes
+## Conceptos fundamentales de los modelos de seguridad
 
-Los responsables de la respuesta ante incidentes responden de forma productiva y eficaz a las brechas de seguridad. Sus responsabilidades incluyen la creación de planes, políticas y protocolos que las organizaciones deben aplicar durante y después de los incidentes.  
-Sus responsabilidades son:  
-1. Desarrollar y adoptar un plan de respuesta a incidentes exhaustivo y viable.
-2. Mantener sólidas prácticas de seguridad y apoyar las medidas de respuesta a incidentes.
-3. Elaborar informes tras los incidentes y prepararse para futuros ataques, teniendo en cuenta las lecciones aprendidas y las adaptaciones que se deben realizar a partir de los incidentes.
+¿cómo podemos crear un sistema que garantice una o más funciones de seguridad? La respuesta estaría en el uso de modelos de seguridad.  
+Presentaremos tres modelos de seguridad fundamentales:  
+Modelo Bell-LaPadula  
+Modelo de integridad Biba  
+Modelo Clark-Wilson  
+
+### Modelo Bell-LaPadula
+
+El modelo Bell-LaPadula tiene como objetivo lograr la confidencialidad mediante la especificación de tres reglas:
+
+Propiedad de seguridad simple: esta propiedad se conoce como «no lectura ascendente» y establece que un sujeto con un nivel de seguridad inferior no puede leer un objeto con un nivel de seguridad superior. Esta regla impide el acceso a información confidencial por encima del nivel autorizado.  
+Propiedad de seguridad estrella: esta propiedad se conoce como «no escribir hacia abajo»; establece que un sujeto con un nivel de seguridad superior no puede escribir en un objeto con un nivel de seguridad inferior. Esta regla impide la divulgación de información confidencial a un sujeto con un nivel de seguridad inferior.  
+Propiedad de seguridad discrecional: esta propiedad utiliza una matriz de acceso para permitir operaciones de lectura y escritura. En la tabla siguiente se muestra un ejemplo de matriz de acceso que se utiliza junto con las dos primeras propiedades.
+
+El modelo Bell-LaPadula tiene ciertas limitaciones. Por ejemplo, no fue diseñado para gestionar el intercambio de archivos.
+
+### Modelo Biba
+
+El modelo Biba tiene como objetivo lograr la integridad mediante la especificación de dos reglas principales:
+
+Propiedad de integridad simple: esta propiedad se conoce como «no leer hacia abajo»; un sujeto con mayor integridad no debe leer de un objeto con menor integridad.  
+Propiedad de integridad estrella: esta propiedad se conoce como «no escribir hacia arriba»; un sujeto con menor integridad no debe escribir en un objeto con mayor integridad.
+
+Estas dos propiedades se pueden resumir como «lectura ascendente, escritura descendente». Esta regla contrasta con el modelo Bell-LaPadula, lo que no debería sorprender, ya que uno se ocupa de la confidencialidad y el otro de la integridad.
+
+El modelo Biba adolece de varias limitaciones. Un ejemplo es que no gestiona las amenazas internas.
+
+### Modelo Clark-Wilson
+
+El modelo Clark-Wilson también tiene como objetivo lograr la integridad mediante el uso de los siguientes conceptos:
+
+Elemento de datos restringido (CDI): se refiere al tipo de datos cuya integridad queremos preservar.
+Elemento de datos sin restricciones (UDI): se refiere a todos los tipos de datos que no son CDI, como las entradas del usuario y del sistema.
+Procedimientos de transformación (TP): estos procedimientos son operaciones programadas, como la lectura y la escritura, y deben mantener la integridad de los CDI.
+Procedimientos de verificación de la integridad (IVP): estos procedimientos comprueban y garantizan la validez de los CDI.
+
+Solo hemos tratado tres modelos de seguridad. Hay muchos otros modelos de seguridad. Algunos ejemplos son:
+
+Modelo de Brewer y Nash.
+Modelo de Goguen-Meseguer.
+Modelo de Sutherland.
+Modelo de Graham-Denning.
+Modelo de Harrison-Ruzzo-Ullman.
+
+### Pregunta
+Haga clic en «Ver sitio» y responda a las cuatro preguntas. ¿Cuál es la bandera que ha obtenido al final?  
+Respuesta: THM{SECURITY_MODELS}
 
 ## Examinador forense digital
 
