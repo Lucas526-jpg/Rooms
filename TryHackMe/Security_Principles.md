@@ -1,21 +1,51 @@
-# Careers in cyber
+# Principios de Seguridad
 
 ## Introduccion
 
-Empezamos hablando del porque elegir ciberseguridad, sueldos elevados, aunque emocionante para algunos, un poco estresante tambien.  
-A continuacion tendremos un breve descripcion de cada de rol en la ciberseguridad.
+Se presentan los temas que se abordaran, como la triada CID y DAD, modelos de seguridad como Bell-LaPadula, principios de seguridad como la defensa en profundidad, el modelo zero trust o el modelo trust but verify, norma ISO/IEC 19249, diferencias entre vulnerabilidad, amenaza y riesgo.
 
-## Analistas de seguridad
+## CIA
 
-Desarrollan medidas de seguridad en las organizaciones con el fin de proteger a la empresa de posibles ataques.
+Cuando se quiere evaluar la seguridad de un sistema, hay que pensar en términos de la tríada de la seguridad: confidencialidad, integridad y disponibilidad.
 
-## Ingeniero de seguridad
+La **confidencialidad** garantiza que solo las personas o destinatarios previstos puedan acceder a los datos.  
+La **integridad** tiene como objetivo garantizar que los datos no puedan ser alterados; además, podemos detectar cualquier alteración si se produce.  
+La **disponibilidad** tiene como objetivo garantizar que el sistema o servicio esté disponible cuando sea necesario.
 
-Desarrollan e implementan soluciones de seguridad utilizando datos sobre amenazas y vulnerabilidades.  
-Sus responsabilidades son:  
-1. Probar y examinar las medidas de seguridad en todo el software.
-2. Supervisar las redes y los informes para actualizar los sistemas y mitigar las vulnerabilidades.
-3. Identificar e implementar los sistemas necesarios para una seguridad óptima.
+Mas alla de la triada CIA:
+
+**Autenticidad**: Auténtico significa que no es fraudulento ni falso. La autenticidad consiste en garantizar que el documento, archivo o dato procede de la fuente que se afirma.  
+**No repudio**: repudiar significa negarse a reconocer la validez de algo. El no repudio garantiza que la fuente original no pueda negar que es la fuente de un documento, archivo o dato concreto. Esta característica es indispensable para diversos ámbitos, como las compras, el diagnóstico de pacientes y la banca.
+
+En 1998, Donn Parker propuso el hexágono de Parker, un conjunto de seis elementos de seguridad. Son los siguientes:
+
+Disponibilidad
+Utilidad
+Integridad
+Autenticidad
+Confidencialidad
+Posesión
+
+Utilidad:se centra en la utilidad de la información. Por ejemplo, un usuario podría haber perdido la clave de descifrado para acceder a un ordenador portátil con almacenamiento cifrado. Aunque el usuario todavía tiene el ordenador portátil con sus discos intactos, no puede acceder a ellos. En otras palabras, aunque sigue estando disponible, la información se encuentra en un formato que no es útil, es decir, no tiene utilidad.  
+Posesión: este elemento de seguridad requiere que protejamos la información contra la apropiación, copia o control no autorizados. Por ejemplo, un adversario podría llevarse una unidad de copia de seguridad, lo que significa que perderíamos la posesión de la información mientras él tenga la unidad. Alternativamente, el adversario podría lograr cifrar nuestros datos utilizando ransomware, lo que también conduciría a la pérdida de la posesión de los datos.
+
+### Pregunta
+Haga clic en «Ver sitio» y responda las cinco preguntas. ¿Cuál es la bandera que obtuvo al final?  
+Respuesta: THM{CIA_TRIAD}
+
+## DAD
+
+Lo contrario de la tríada CIA sería la tríada DAD: divulgación, alteración y destrucción.
+
+La **divulgación** es lo contrario de la confidencialidad. En otras palabras, la divulgación de datos confidenciales sería un ataque a la confidencialidad.
+La **alteración** es lo contrario de la integridad. Por ejemplo, la integridad de un cheque es indispensable.
+La **destrucción/denegación** es lo contrario de la disponibilidad.
+
+Proteger la confidencialidad y la integridad al extremo puede restringir la disponibilidad, y aumentar la disponibilidad al extremo puede dar lugar a la pérdida de confidencialidad e integridad. La buena aplicación de los principios de seguridad requiere un equilibrio entre los tres.
+
+### Pregunta
+El atacante logró acceder a los registros de los clientes y los publicó en Internet. ¿Qué tipo de ataque es este?  
+Respuesta: Disclosure
 
 ## Respuesta ante incidentes
 
