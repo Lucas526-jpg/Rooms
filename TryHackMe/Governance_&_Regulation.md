@@ -2,12 +2,29 @@
 
 ## Introduccion
 
-Empezamos hablando del porque elegir ciberseguridad, sueldos elevados, aunque emocionante para algunos, un poco estresante tambien.  
-A continuacion tendremos un breve descripcion de cada de rol en la ciberseguridad.
+La room tiene como objetivo enseñar sobre las normativas y leyes internacionales que rigen la ciberseguridad.
 
-## Analistas de seguridad
+## Terminologia importante
 
-Desarrollan medidas de seguridad en las organizaciones con el fin de proteger a la empresa de posibles ataques.
+Gobernanza: gestión y dirección de una organización o sistema para alcanzar sus objetivos y garantizar el cumplimiento de las leyes, normativas y estándares.  
+Regulación: norma o ley aplicada por un organismo gubernamental para garantizar el cumplimiento y proteger contra daños.  
+Cumplimiento: estado de adhesión a las leyes, normativas y estándares que se aplican a una organización o sistema.  
+
+### Gobernanza de la seguridad de la informacion
+
+La gobernanza de la seguridad de la información representa la estructura, las políticas, los métodos y las directrices establecidos por una organización para garantizar la privacidad, la fiabilidad y la accesibilidad de sus activos de información.
+
+Los procesos de la gobernanza de la seguridad de la información
+
+Estrategia: desarrollar e implementar una estrategia integral de seguridad de la información que se ajuste a los objetivos generales de la organización.  
+Políticas y procedimientos: preparar políticas y procedimientos que rijan el uso y la protección de los activos de información.  
+Gestión de riesgos: realizar evaluaciones de riesgos para identificar posibles amenazas a los activos de información de la organización e implementar medidas de mitigación de riesgos.  
+Medición del rendimiento: establecer métricas e indicadores clave de rendimiento (KPI) para medir la eficacia del programa de gobernanza de la seguridad de la información.  
+Cumplimiento: garantizar el cumplimiento de las normativas pertinentes y las mejores prácticas del sector.
+
+### Normativas de la seguridad de la informacion
+
+La normativa de seguridad de la información se refiere a los marcos legales y normativos que rigen el uso y la protección de los activos de información. Las normativas están diseñadas para proteger los datos confidenciales del acceso no autorizado, el robo y el uso indebido. El cumplimiento de las normativas suele ser obligatorio y lo imponen los organismos gubernamentales u otros organismos reguladores.
 
 ## Ingeniero de seguridad
 
