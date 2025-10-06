@@ -17,3 +17,13 @@
 | **Legacy** | Fácil | Enumeración SMB, explotación de MS08-067. | [Ver Solución Aquí](HackTheBox/Legacy.md) |
 
 ---
+
+## 💀 PortSwigger
+
+### SQLI
+
+| Room | Dificultad | Habilidades Destacadas | Acceso Directo (Writeup) |
+| :--- | :--- | :--- | :--- |
+| **SQL injection vulnerability in WHERE clause allowing retrieval of hidden data** | Fácil | Explotacion SQL. | [Ver Solución Aquí](HackTheBox/SQLI1) |
+
+---
