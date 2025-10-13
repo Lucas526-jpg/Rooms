@@ -1,4 +1,22 @@
-# 📚 Writeups y Reportes Formales 📚
+# 📚 Lab: SQL injection attack, listing the database contents on non-Oracle databases 📚
+
+Como sabemos que la base de datos no es oracle y que la vulnerabilidad esta en la categoria de productos, podemos analizar la cantidad de columnas despues de seleccionar un producto con el siguiente comando en la url:  
+' UNION SELECT null,null-- -.
+
+Al hacerlo, podremos descubrir que la tabla, tiene dos columnas, luego, con el siguinte comando:  
+
+' UNION SELECT schema_name,NULL FROM information_schema.schemata-- -
+
+Podremos ver las bases de datos, para analizarlas y no tocar bases de datos por defecto de la DBMS.  
+Al hacerlo, podremos ver la base de datos "public", la cual nos interesa para este room.
+
+Con el siguiente inyeccion, podremos ver las tablas en la base de datos "public"
+
+' UNION SELECT table_name,NULL FROM information_schema.tables WHERE table_schema = 'public'-- -
+
+Donde podremos ver las tablas products y users_xktbui, la cual esta ultima es la que nos interesa.
+
+
 Indentificamos la cantidad de columnas  
 Identificamos cual es la que devuelve un dato y lo imprime sin errores  
 Al indentificar, pondremos la inyeccion SELECT * FROM information_schema.tables, modificandola segun la cantidad de columnas y sus datos: SELECT TABLE_NAME, NULL FROM information_schema.tables  
